@@ -1,0 +1,58 @@
+animations {
+    // Uncomment to turn off all animations.
+    // You can also put "off" into each individual animation to disable it.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    // slowdown 3.0
+
+    // Individual animations.
+
+    slowdown 1.0
+    horizontal-view-movement {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+    overview-open-close {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+
+
+    window-movement {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+    window-open {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+    window-resize {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+    workspace-switch {
+        duration-ms 270
+        curve "cubic-bezier" 0.26 0.38 0.3 1.28
+    }
+
+       config-notification-open-close {
+        spring damping-ratio=0.6 stiffness=1000 epsilon=0.001
+    }
+
+    exit-confirmation-open-close {
+        spring damping-ratio=0.6 stiffness=500 epsilon=0.01
+    }
+
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+
+    recent-windows-close {
+        spring damping-ratio=1.0 stiffness=800 epsilon=0.001
+    }
+}
+
+//include "./pixelate.kdl"
+

@@ -1,0 +1,21 @@
+//include "./cfg/animation.kdl"
+//include "./cfg/autostart.kdl"
+//include "./cfg/keybinds.kdl"
+//include "./cfg/input.kdl"
+//include "./cfg/display.kdl"
+//include "./cfg/layout.kdl"
+//include "./cfg/rules.kdl"
+//include "./cfg/misc.kdl"
+
+include "./noctalia.kdl"
+
+include "./cfgv5/animation.kdl"
+include "./cfgv5/autostart.kdl"
+include "./cfgv5/keybinds.kdl"
+include "./cfgv5/input.kdl"
+include "./cfgv5/display.kdl"
+include "./cfgv5/layout.kdl"
+include "./cfgv5/rules.kdl"
+include "./cfgv5/misc.kdl"
+
+

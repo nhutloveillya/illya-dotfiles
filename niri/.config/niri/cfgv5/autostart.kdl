@@ -1,0 +1,10 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+    spawn-sh-at-startup "pkill feh"
+    spawn-sh-at-startup "noctalia"
+    spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+    spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+    spawn-sh-at-startup "fcitx5 -d"
+    spawn-at-startup "xwayland-satellite"
+    //spawn-sh-at-startup "paplay /home/nhut/.local/share/sound/ome.wav --volume 23000"
