@@ -13,7 +13,7 @@
 }
 
     cursor {
-      xcursor-theme "kei"
+      xcursor-theme "RiceShower"
       xcursor-size 32
       hide-when-typing
       hide-after-inactive-ms 5000

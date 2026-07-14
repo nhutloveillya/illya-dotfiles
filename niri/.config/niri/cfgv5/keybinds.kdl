@@ -1,24 +1,28 @@
 binds {
+    //General
     Mod+Slash { show-hotkey-overlay; }
     Mod+T repeat=false hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
     Mod+Space repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Menu repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+B repeat=false hotkey-overlay-title="Open Browser: brave" { spawn-sh "helium-browser"; }
-    Mod+ALT+L repeat=false hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Mod+B repeat=false hotkey-overlay-title="Open Browser: helium-browser" { spawn-sh "helium-browser"; }
+    Mod+ALT+L repeat=false hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
     Alt+F4 repeat=false hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+S repeat=false hotkey-overlay-title="Open Setting" { spawn-sh "noctalia msg settings-toggle"; }
     Mod+M repeat=false hotkey-overlay-title="Open Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+E repeat=false hotkey-overlay-title="File Manager: nemo" { spawn "nemo"; }
+    Mod+Shift+W repeat=false hotkey-overlay-title="Random Wallpaper" {spawn-sh "noctalia msg wallpaper-random";}
     //Mod+N hotkey-overlay-title="Open Neovim" { spawn "neovim"; }
     Mod+F2 repeat=false hotkey-overlay-title="Open wallcard" { spawn-sh "noctalia msg panel-toggle launcher /wall"; }
     Mod+F1 repeat=false hotkey-overlay-title="open clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; } 
-        // Audio & Brightness
+  
+    // Audio & Brightness
     XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }
     XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
     
+    //Focus and move
     Mod+Q { close-window; }
     Mod+Left { focus-column-left; }
     Mod+H { focus-column-left; }
@@ -46,8 +50,7 @@ binds {
     Mod+Shift+Right { focus-monitor-right; }
     Mod+Shift+UP { focus-workspace-up; }
     Mod+Shift+Down { focus-workspace-down; }
-
-    
+ 
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
     Mod+CTRL+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
@@ -83,6 +86,11 @@ binds {
     
     Mod+TAB { focus-workspace-previous; }
     
+    Mod+C { center-column; }
+    Mod+Ctrl+C { center-visible-columns; }
+
+
+    //Layout
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
@@ -91,10 +99,7 @@ binds {
     F11 { fullscreen-window; }
     Mod+Shift+F { maximize-window-to-edges; }
     Mod+Ctrl+F { expand-column-to-available-width; }
-    
-    Mod+C { center-column; }
-    Mod+Ctrl+C { center-visible-columns; }
-    
+      
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
     Mod+Shift+Minus { set-window-height "-10%"; }
@@ -104,6 +109,7 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
     
+    //Misc
     Print { screenshot; }
     Shift+Print { screenshot-screen; }
     CTRL+Print { screenshot-window; }

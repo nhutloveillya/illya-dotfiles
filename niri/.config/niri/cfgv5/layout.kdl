@@ -20,7 +20,7 @@
 
 
         focus-ring {
-        width 2
+        width 1.5
         // Other properties
     }
 
