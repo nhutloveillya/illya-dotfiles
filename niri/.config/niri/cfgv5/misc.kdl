@@ -3,17 +3,17 @@
 
     environment {
         ELECTRON_OZONE_PLATFORM_HINT "auto"
-        QT_QPA_PLATFORM "wayland"
+        QT_QPA_PLATFORM "xcb"
         QT_QPA_PLATFORMTHEME "gtk3"
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-        XDG_CURRENT_DESKTOP "niri"
+        //XDG_CURRENT_DESKTOP "wlr"
         XDG_SESSION_TYPE "wayland"
         XDG_DATA_DIRS "~/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share"
         GDK_BACKEND "wayland"
 }
 
     cursor {
-      xcursor-theme "RiceShower"
+      xcursor-theme "kei"
       xcursor-size 32
       hide-when-typing
       hide-after-inactive-ms 5000

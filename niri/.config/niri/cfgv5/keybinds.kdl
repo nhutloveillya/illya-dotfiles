@@ -1,7 +1,7 @@
 binds {
     //General
     Mod+Slash { show-hotkey-overlay; }
-    Mod+T repeat=false hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
+    Mod+T hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
     Mod+Space repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Menu repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+B repeat=false hotkey-overlay-title="Open Browser: helium-browser" { spawn-sh "helium-browser"; }
