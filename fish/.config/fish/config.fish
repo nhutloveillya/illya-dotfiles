@@ -1,4 +1,4 @@
-source .config/fish/conf.d/done.fish
+source $HOME/.config/fish/conf.d/done.fish
 
 ## Set values
 ## Run fastfetch as welcome message
