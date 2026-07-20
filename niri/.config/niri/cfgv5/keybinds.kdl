@@ -94,11 +94,16 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
+    //niri_custom_layout
+    Mod+U { spawn-sh "python3 $HOME/.config/niri/niri_tweaks/niri_unstack_all.py -c 50";}
+    Mod+A { spawn-sh "python3 $HOME/.config/niri/niri_tweaks/niri_custom_layout.py 2 2 -r 60 40 40 60 -w 50 50 -uw 50";}
+    Mod+Shift+A { spawn-sh "python3 $HOME/.config/niri/niri_tweaks/niri_custom_layout.py 3 2 3 -w 25 50 25 -r 25 25 50 80 20 0 0 0 -a l -uw 50"; }
 
     Mod+F { maximize-column; }
+    Mod+Ctrl+F { spawn-sh "python3 $HOME/.config/niri/niri_tweaks/niri_maximize_helper.py"; }
     F11 { fullscreen-window; }
     Mod+Shift+F { maximize-window-to-edges; }
-    Mod+Ctrl+F { expand-column-to-available-width; }
+    //Mod+Ctrl+F { expand-column-to-available-width; }
       
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }
